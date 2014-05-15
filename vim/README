@@ -1,0 +1,14 @@
+0) brew install vim
+1) brew install ack
+2) brew install ctags
+
+3) install vundle
+  see here:
+  https://github.com/gmarik/vundle
+
+4) generate ctags for the rbenv ruby standard library
+see here:
+  https://github.com/tpope/rbenv-ctags
+5) install gem-ctags
+  https://github.com/tpope/gem-ctags
+6) brew install the_silver_searcher
