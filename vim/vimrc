@@ -87,7 +87,6 @@ call vundle#begin('~/dotfiles/vim/bundle')
 Plugin 'gmarik/vundle'
 
 " Original repos on github
-Bundle 'epmatsw/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
