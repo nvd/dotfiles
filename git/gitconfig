@@ -1,7 +1,7 @@
 [core]
   ignorecase = true
   editor = /usr/bin/vim
-  excludesfile = /Users/nsiddiqui/.gitignore_global
+  excludesfile = ~/.gitignore_global
   push = tracking
 [github]
   user = nvd
@@ -41,7 +41,6 @@
   # Show files ignored by git:
   ign = ls-files -o -i --exclude-standard
 
-  # Uncomment for using SourceGear DiffMerge
 [diff]
   prompt = false
   tool = diffmerge
@@ -58,9 +57,3 @@
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
   trustexitcode = false
-; [difftool "sourcetree"]
-; 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-; 	path = 
-; [mergetool "sourcetree"]
-; 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-; 	trustExitCode = true
