@@ -1,2 +1,4 @@
 # handles updating fresh
 fresh freshshell/fresh bin/fresh --bin
+
+fresh git://bitbucket.org/nvd/dotfiles.git git/gitconfig --file
