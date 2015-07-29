@@ -5,11 +5,11 @@ fresh nvd/dotfiles.git gitconfig --file
 fresh nvd/dotfiles.git vimrc --file
 fresh nvd/dotfiles.git zsh/naveed.zsh-theme --file=~/.oh-my-zsh/themes/naveed.zsh-theme
 fresh nvd/dotfiles.git zshrc --file
-fresh dotfiles/local_zshrc zshrc --file
 fresh nvd/dotfiles.git Brewfile --file=~/Brewfile
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew tap Homebrew/bundle
 brew bundle
