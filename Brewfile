@@ -1,0 +1,16 @@
+install brew-cask
+install ctags
+install git
+install macvim
+install rbenv
+install rbenv-gem-rehash
+install readline
+install ruby
+install ruby-build
+install scala
+install sqlite
+install the-silver-searcher
+install tig
+install typesafe-activator
+install vim
+install zsh
