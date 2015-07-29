@@ -8,4 +8,5 @@ fresh nvd/dotfiles.git Brewfile --file
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+brew tap Homebrew/bundle
 brew bundle
