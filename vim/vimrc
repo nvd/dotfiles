@@ -67,7 +67,6 @@ endif
 
 set tags=./tags;       " TagList
 
-" set gfn=Inconsolata:h14
 set gfn=Meslo\ LG\ S\ for\ Powerline:h11
 
 " check to make sure vim has been compiled with colorcolumn support before enabling it
@@ -76,9 +75,7 @@ if exists("+colorcolumn")
 endif
 
 syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+filetype off           " Enable filetype detection
 
 set rtp+=~/dotfiles/vim/bundle/vundle
 call vundle#begin('~/dotfiles/vim/bundle')
@@ -91,6 +88,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'rking/ag.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -104,6 +102,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/tComment'
+Plugin 'derekwyatt/vim-scala'
 
 " Colorschemes
 Plugin 'croaky/vim-colors-github'
@@ -112,7 +111,15 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'tomasr/molokai'
 
 call vundle#end()
+
+" Syntax and indent
+set showmatch  "Show matching bracets when text indicator is over them
+
+" Switch on filetype detection and loads
 filetype plugin indent on     " required!
+filetype on
+set autoindent " Copy indent from the row above
+set si " Smart indent
 
 " Brief help
 " :PluginList          - list configured bundles
@@ -189,33 +196,12 @@ map <leader>ct :!ctags --extra=+f --languages=-javascript --exclude=.git --exclu
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
 
+""""""""""""""""""""""""""""""""""
+" Some other comfy settings
+""""""""""""""""""""""""""""""""""
 com W w
+set nocompatible "Not vi compatible (Vim is king)
 
-set nocompatible "Not vi compativle (Vim is king)
-
-""""""""""""""""""""""""""""""""""
-" Syntax and indent
-""""""""""""""""""""""""""""""""""
-syntax on " Turn on syntax highligthing
-set showmatch  "Show matching bracets when text indicator is over them
-
-" colorscheme delek
-
-" Switch on filetype detection and loads
-" indent file (indent.vim) for specific file types
-filetype indent on
-filetype on
-set autoindent " Copy indent from the row above
-set si " Smart indent
-
-""""""""""""""""""""""""""""""""""
-" Some other confy settings
-""""""""""""""""""""""""""""""""""
 " set nu " Number lines
 set hls " highlight search
 set lbr " linebreak
-
-" Use 2 space instead of tab during format
-set shiftwidth=2
-set softtabstop=2
-set expandtab
