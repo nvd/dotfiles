@@ -77,8 +77,8 @@ endif
 syntax on             " Enable syntax highlighting
 filetype off           " Enable filetype detection
 
-set rtp+=~/dotfiles/vim/bundle/vundle
-call vundle#begin('~/dotfiles/vim/bundle')
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin('~/.vim/bundle')
 
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
