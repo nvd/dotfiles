@@ -105,9 +105,9 @@ Plugin 'vim-scripts/tComment'
 Plugin 'derekwyatt/vim-scala'
 
 " Colorschemes
-Plugin 'croaky/vim-colors-github'
-Plugin 'desert-warm-256'
-Plugin 'jnurmine/Zenburn'
+" Plugin 'croaky/vim-colors-github'
+" Plugin 'desert-warm-256'
+" Plugin 'jnurmine/Zenburn'
 Plugin 'tomasr/molokai'
 
 call vundle#end()
@@ -152,8 +152,8 @@ nmap <leader>V <Plug>yankstack_substitute_newer_paste
 " Available colorschemes
 " colorscheme desert-warm-256
 " colorscheme github
-colorscheme molokai
 " colorscheme zenburn
+colorscheme molokai
 
 " Go learn vim
 nnoremap <Left> :echoe "Use h"<CR>
