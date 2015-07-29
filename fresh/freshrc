@@ -2,3 +2,7 @@
 fresh freshshell/fresh bin/fresh --bin
 
 fresh git://bitbucket.org/nvd/dotfiles.git git/gitconfig --file
+fresh git://bitbucket.org/nvd/dotfiles.git vim/vimrc --file
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/dotfiles/vim/bundle/Vundle.vim
+vim +PluginInstall +qall
