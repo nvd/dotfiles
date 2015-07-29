@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+
 brew 'brew-cask'
 brew 'ctags'
 brew 'git'
@@ -15,3 +16,9 @@ brew 'tig'
 brew 'typesafe-activator'
 brew 'vim'
 brew 'zsh'
+
+cask 'cocoapods'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'libreoffice'
+cask 'shiftit'
