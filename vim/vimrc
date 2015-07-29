@@ -77,11 +77,11 @@ endif
 syntax on             " Enable syntax highlighting
 filetype off           " Enable filetype detection
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin('~/.vim/bundle')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Original repos on github
 Plugin 'airblade/vim-gitgutter'
