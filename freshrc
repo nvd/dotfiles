@@ -3,8 +3,6 @@ fresh freshshell/fresh bin/fresh --bin
 
 fresh nvd/dotfiles.git gitconfig --file
 fresh nvd/dotfiles.git vimrc --file
-fresh nvd/dotfiles.git zsh/naveed.zsh-theme --file=~/.oh-my-zsh/themes/naveed.zsh-theme
-fresh nvd/dotfiles.git zshrc --file
 fresh nvd/dotfiles.git Brewfile --file=~/Brewfile
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -14,3 +12,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew tap Homebrew/bundle
 brew bundle
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fresh nvd/dotfiles.git zsh/naveed.zsh-theme --file=~/.oh-my-zsh/themes/naveed.zsh-theme
+fresh nvd/dotfiles.git zshrc --file
