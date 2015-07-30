@@ -6,7 +6,8 @@ How to Install
  3. `git clone git@github.com:nvd/dotfiles.git`
  4. Install Fresh: 
 ```bash
-bash -c "`curl -sL get.freshshell.com`" source ~/.fresh/build/shell.sh
+bash -c "`curl -sL get.freshshell.com`"
+source ~/.fresh/build/shell.sh
 ```
  5. Symlink dotfiles/freshrc to ~/.freshrc
  6. `fresh`
