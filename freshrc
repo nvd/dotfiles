@@ -10,6 +10,7 @@ fresh nvd/dotfiles.git Brewfile --file=~/Brewfile
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew tap Homebrew/bundle
 brew bundle
