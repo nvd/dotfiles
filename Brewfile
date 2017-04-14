@@ -18,7 +18,7 @@ brew 'typesafe-activator'
 brew 'vim'
 brew 'zsh'
 
-cask 'cocoapods'
+cask 'cocoapods-app'
 cask 'diffmerge'
 cask 'docker'
 cask 'google-chrome'
