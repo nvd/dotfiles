@@ -5,7 +5,7 @@ fresh nvd/dotfiles.git gitconfig --file
 fresh nvd/dotfiles.git vimrc --file
 fresh nvd/dotfiles.git Brewfile --file=~/Brewfile
 
-fresh gmarik/Vundle.vim . --file=~/.vim/bundle/Vundle.vim
+fresh gmarik/Vundle.vim . --file=~/.vim/bundle/Vundle.vim/
 vim +PluginInstall +qall
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
