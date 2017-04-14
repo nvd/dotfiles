@@ -1,7 +1,6 @@
 tap 'caskroom/cask'
 
 brew 'awscli'
-brew 'brew-cask'
 brew 'ctags'
 brew 'git'
 brew 'kubernetes-cli'
