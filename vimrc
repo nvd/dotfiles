@@ -11,6 +11,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set smarttab
 set autoindent
 set nowrap
 
@@ -22,9 +23,9 @@ set hidden
 set title
 
 " fold settings
-set foldmethod=syntax
-set foldlevelstart=2
-set foldnestmax=3
+"set foldmethod=syntax
+"set foldlevelstart=2
+"set foldnestmax=3
 
 set number
 set history=100       " Save the last 100 commands/search terms
@@ -87,7 +88,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'rking/ag.vim'
@@ -103,6 +105,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'thoughtbot/vim-rspec'
 
 " Colorschemes
 Plugin 'tomasr/molokai'
@@ -189,6 +192,14 @@ map <leader>ct :!ctags --extra=+f --languages=-javascript --exclude=.git --exclu
 " When vimrc, either directly or via symlink, is edited, automatically reload it
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
+
+" RSpec.vim mappings
+let g:rspec_runner = "os_x_iterm2"
+let g:rspec_command = "!bundle exec rspec {spec}"
+map <Leader>q :call RunCurrentSpecFile()<CR>
+map <Leader>w :call RunNearestSpec()<CR>
+map <Leader>e :call RunLastSpec()<CR>
+map <Leader>r :call RunAllSpecs()<CR>
 
 """"""""""""""""""""""""""""""""""
 " Some other comfy settings
