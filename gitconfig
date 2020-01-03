@@ -5,9 +5,9 @@
   push = tracking
 [github]
   user = nvd
-  token = 4d8b3e772602d40e51ebcc0f31600c02
+  token = 
 [user]
-  email = nsiddiqui@fairfaxmedia.com.au
+  email = 
   name = Naveed Siddiqui
 [color]
   ui = auto
